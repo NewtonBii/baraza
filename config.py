@@ -5,7 +5,7 @@ class Config:
     """Main configurations class"""
 
     # SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://newton:newton@localhost/new_pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://newton:newton@localhost/baraza'
     SECRET_KEY = os.environ.get("SECRET_KEY")
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
     MAIL_SERVER = 'smtp.mail.yahoo.com'
@@ -20,7 +20,7 @@ class Config:
 class ProdConfig(Config):
     """Production configuration class that inherits from the main configurations class"""
     # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://newton:newton@localhost/new_pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://newton:newton@localhost/baraza'
 
 
 class DevConfig(Config):
